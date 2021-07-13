@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <string>
 
 int main(int argc, char *argv[]) {
     int current_line = 0;
@@ -35,4 +36,7 @@ int main(int argc, char *argv[]) {
 
     // rename the file
     std::rename((path + ".save").c_str(), path.c_str());
+    std::cout << "Fixed host file! Press enter to exit...";
+    std::cin.ignore();
+
 }
