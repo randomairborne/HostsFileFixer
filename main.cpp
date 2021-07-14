@@ -13,9 +13,8 @@ int main(int argc, char *argv[]) {
     // Use a while loop together with the getline() function to read the file line by line
     while (getline(HostsFile, LineText)) {
         current_line++;
-        // Output the text from the file
-        std::cout << LineText << std::endl;
         if (LineText.find("mojang.com") != std::string::npos) {
+            // send output if we find a line with the word mojang
             std::cout << "found: " << LineText << " at line " << current_line << ", fixing." << std::endl;
         }
         if (LineText.find("mojang.com") == std::string::npos) {
