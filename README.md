@@ -1,2 +1,2 @@
 # HostsFileFixer
-Automatically repair hosts file on windows
+Automatically remove traces left by Minecraft piracy tools from your system
