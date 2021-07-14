@@ -1,4 +1,6 @@
 # Project exclude paths
+**/cmake-build*
 **/.idea
 *.exe
 *log.txt
+**/secrets
